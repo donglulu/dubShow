@@ -1,5 +1,7 @@
 package open.com.nicesound.model;
 
+import android.content.Context;
+
 import com.zhy.http.okhttp.OkHttpUtils;
 
 import java.util.ArrayList;
@@ -9,17 +11,17 @@ import open.com.nicesound.bean.HomeHotBean;
 import open.com.nicesound.bean.HomeLiveBean;
 import open.com.nicesound.constant.Constants;
 import open.com.nicesound.httpcallback.HomeLiveHttpCallBack;
+import open.com.nicesound.presenter.homepresenter.IHomeFragmentPresenter;
 
 /**
  * 作者：huangliguang on 2017/2/15 13:06
  * 邮箱：1720189720@qq.com
  */
-public class HomeLiveModel {
+public class HomeLiveModel{
     private static HomeLiveModel mHomeLiveModel;
-    private ArrayList<HomeHotBean.DataBean.FilmBean> list;
+    private ArrayList<HomeLiveBean.DataBean.ListBean> list;
     private HomeLiveModel(){
-
-        list = new ArrayList<HomeHotBean.DataBean.FilmBean>();
+        list = new ArrayList<HomeLiveBean.DataBean.ListBean>();
     }
 
 
@@ -38,12 +40,30 @@ public class HomeLiveModel {
 
             @Override
             public void onResponse(ArrayList<HomeLiveBean.DataBean.ListBean> response) {
-                callback.finish(Constants.RESULT_SUCCESS,response);
+                list.addAll(response);
+                callback.finish(Constants.RESULT_SUCCESS,list);
             }
         });
     }
 
+    public void onRefresh(final HomeLiveRefreshCallBack refreshCallBack){
+        OkHttpUtils.get().url(Constants.SERVER_ADRESS+Constants.HOME_LIVE_REFRESH).build().execute(new HomeLiveHttpCallBack() {
+            @Override
+            public void onError(Call call, Exception e) {
+
+            }
+
+            @Override
+            public void onResponse(ArrayList<HomeLiveBean.DataBean.ListBean> response) {
+                list.addAll(0,response);
+                refreshCallBack.finish(Constants.RESULT_SUCCESS,list);
+            }
+        });
+    }
     public interface HomeLiveCallBack {
+        void finish(int resultcode, ArrayList<HomeLiveBean.DataBean.ListBean> list);
+    }
+    public interface HomeLiveRefreshCallBack {
         void finish(int resultcode, ArrayList<HomeLiveBean.DataBean.ListBean> list);
     }
 }

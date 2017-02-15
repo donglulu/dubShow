@@ -42,6 +42,7 @@ public abstract class HomeLiveHttpCallBack extends Callback<ArrayList<HomeLiveBe
                 mBean.setUser_head(array.getJSONObject(i).getString("user_head"));
                 mBean.setTitle(array.getJSONObject(i).getString("title"));
                 mBean.setCount(array.getJSONObject(i).getInt("count"));
+                mBean.setShare_url(array.getJSONObject(i).getString("share_url"));
                 ListBean.add(mBean);
                 mBean = null;
             }
