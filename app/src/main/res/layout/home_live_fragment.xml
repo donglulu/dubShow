@@ -4,10 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="直播界面"
-        android:textSize="40sp" />
+        android:id="@+id/lv_live"/>
 </LinearLayout>

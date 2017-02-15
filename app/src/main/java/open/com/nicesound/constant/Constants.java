@@ -19,5 +19,6 @@ public class Constants {
     public static final String SERVER_ADRESS = "http://api1.peiyinxiu.com/";
     //主页 热门
     public static final String HOME_HOT = "Api/Film/HomeData?appkey=8b232b5997100d5a&area=110100&pg=1&t=9686&token=&userId=0&sign=a1acd41d5dfbbd410ada28df79f48694";
-
+    //主页 直播
+    public static final String HOME_LIVE= "Api/live/LiveList?appkey=8b232b5997100d5a&pg=2&token=&userId=0&sign=9a27bafcdcae8ed66aa79d140e69f2df";
 }
