@@ -14,7 +14,6 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import open.com.nicesound.R;
-import open.com.nicesound.view.FlymeTabStrip;
 import open.com.nicesound.base.BaseFragment;
 import open.com.nicesound.utils.Px2DpUtils;
 
