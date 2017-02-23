@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".view.LiveActivity" />
         <activity android:name=".view.VideoActivity"></activity>
+        <activity android:name=".view.circle.CircleDetailActivity"/>
     </application>
 
 </manifest>
