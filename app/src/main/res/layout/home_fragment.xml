@@ -12,33 +12,34 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary">
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <RelativeLayout
             android:gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
             <ImageButton
-                android:src="@drawable/drafts_icon_ok"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/home_icon_box"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ib_box"/>
 
 
             <com.viewpagerindicator.TabPageIndicator
                 android:layout_centerHorizontal="true"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/indicator_title"/>
             <ImageButton
-                android:src="@drawable/drafts_icon_ok"
-                android:layout_width="0dp"
+                android:background="@null"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/abc_ic_search_api_mtrl_alpha"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:id="@+id/ib_search"/>
-        </LinearLayout>
+        </RelativeLayout>
 
     </android.support.v7.widget.Toolbar>
 

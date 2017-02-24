@@ -32,9 +32,11 @@ public class MineFragment extends BaseFragment {
             "我的财富","我的钱包","我的成就","我的社团",
             "找好友","关注","粉丝",
             "设置"};
-    private int icon[] = {R.drawable.icon_beijinyin,R.drawable.icon_beijinyin,R.drawable.icon_beijinyin,R.drawable.icon_beijinyin,R.drawable.icon_beijinyin,
-            R.drawable.icon_beijinyin,R.drawable.icon_beijinyin,R.drawable.icon_beijinyin,R.drawable.icon_beijinyin,
-            R.drawable.icon_beijinyin,R.drawable.icon_beijinyin,R.drawable.icon_beijinyin,R.drawable.icon_beijinyin};
+    private int icon[] = {R.drawable.space_icon_novice,R.drawable.ds_space_icon_xiaoxi,R.drawable.ds_space_icon_zuanshi,
+            R.drawable.ds_space_icon_material,R.drawable.ds_space_icon_yishangchuan,
+            R.drawable.ds_space_icon_money,R.drawable.space_icon_money,
+            R.drawable.space_icon_achievement,R.drawable.space_icon_corporate,
+            R.drawable.space_icon_addfriend,R.drawable.space_icon_novice,R.drawable.space_icon_fans,R.drawable.space_icon_set};
     private ArrayList<View> itemViewList = new ArrayList<View>();
 
     @Override
