@@ -53,20 +53,13 @@ public class CircleAdapter extends BaseAdapter {
         return position;
     }
 
-
-
-
-
-
-
-
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
 
         final ViewHolder viewHolder ;
 
 
-        if (convertView == null || convertView.getTag() == null) {
+        if ((convertView == null) || (convertView.getTag() == null)) {
             convertView = LayoutInflater.from(context)
                     .inflate(resourceId, null);
 

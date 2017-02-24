@@ -40,7 +40,6 @@ public class HomeLiveModel{
 
             @Override
             public void onResponse(ArrayList<HomeLiveBean.DataBean.ListBean> response) {
-                //判断是否含有之前的
                 list.addAll(response);
                 callback.finish(Constants.RESULT_SUCCESS,list);
             }
@@ -56,6 +55,7 @@ public class HomeLiveModel{
 
             @Override
             public void onResponse(ArrayList<HomeLiveBean.DataBean.ListBean> response) {
+                //判断是否含有之前的
                 for (int i = 0; i <response.size(); i++) {
                     boolean contains = list.contains(response.get(i));
                     if (!contains){

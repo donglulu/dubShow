@@ -37,7 +37,7 @@ public class HomeActivityFragment extends BaseFragment {
         return inflater.inflate(R.layout.home_activity_fragment, container, false);
     }
 
-    class thread extends Thread {
+   /* class thread extends Thread {
         @Override
         public void run() {
             try {
@@ -53,7 +53,7 @@ public class HomeActivityFragment extends BaseFragment {
             }
             super.run();
         }
-    }
+    }*/
 
     public void indexOF(String content) {
 
@@ -74,7 +74,7 @@ public class HomeActivityFragment extends BaseFragment {
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        new thread().start();
+        //new thread().start();
 
         super.onActivityCreated(savedInstanceState);
     }

@@ -11,6 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.viewpagerindicator.TabPageIndicator;
+import com.viewpagerindicator.TitlePageIndicator;
+
 import java.util.ArrayList;
 
 import open.com.nicesound.R;
@@ -33,6 +36,7 @@ public class HomeFragment extends BaseFragment {
 
 
     private ViewPager mViewPager;
+    private TabPageIndicator mTabPageIndicator;
 
 
     /**
@@ -74,12 +78,33 @@ public class HomeFragment extends BaseFragment {
 
     private void initView(FragmentActivity activity) {
         mViewPager = (ViewPager) activity.findViewById(R.id.vp_home);
+        mTabPageIndicator  = (TabPageIndicator) activity.findViewById(R.id.indicator_title);
 
         mViewPager.setAdapter(new HomeHotAdapter(activity.getSupportFragmentManager()));
-        mViewPager.setCurrentItem(1);
+        mTabPageIndicator.setViewPager(mViewPager);
+
+        mTabPageIndicator.setCurrentItem(1);
+
+        mTabPageIndicator.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                mTabPageIndicator.setCurrentItem(position);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
     class HomeHotAdapter extends FragmentStatePagerAdapter {
+
 
         public HomeHotAdapter(FragmentManager fm) {
             super(fm);
@@ -113,6 +138,4 @@ public class HomeFragment extends BaseFragment {
 
         return fragment;
     }
-
-
 }
