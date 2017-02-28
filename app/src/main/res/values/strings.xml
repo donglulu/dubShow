@@ -1,18 +1,7 @@
 <resources>
     <string name="app_name">niceSound</string>
+    <string name="title_activity_dmo">Dmo</string>
+    <string name="title_activity_home_hot_fragment">HomeHotFragment</string>
     <string name="action_settings">Settings</string>
-
-    <!-- 弹幕在用 -->
-    <string name="danmaku_hide">hide</string>
-    <string name="danmaku_show">show</string>
-    <string name="danmaku_pause">pause</string>
-    <string name="danmaku_resume">resume</string>
-    <string name="danmaku_rotate">旋转屏幕</string>
-    <string name="danmaku_timing_send">定时发送</string>
-    <string name="danmaku_timing_cancel">取消定时</string>
-    <string name="danmaku_send_text_only">发送文字</string>
-    <string name="danmaku_send_text_image">发送图文</string>
-    <!-- 分割线 -->
-
-
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

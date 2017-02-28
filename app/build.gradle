@@ -39,9 +39,4 @@ dependencies {
     compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.7.7.1'
     compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.7.7.1'
     compile project(':ViewPagerIndicatorlibrary')
-    //bilibili弹幕依赖
-    compile 'com.github.ctiao:DanmakuFlameMaster:0.6.4'
-    compile 'com.github.ctiao:ndkbitmap-armv7a:0.6.4'
-    compile 'com.github.ctiao:ndkbitmap-armv5:0.6.4'
-    compile 'com.github.ctiao:ndkbitmap-x86:0.6.4'
 }
