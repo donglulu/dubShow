@@ -19,11 +19,17 @@
             android:textColor="#000"
             android:textSize="20sp" />
     </android.support.v7.widget.Toolbar>
+    <include
+        layout="@layout/video"
+        android:id="@+id/video_item"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/video_toolbar" />
     <ListView
         android:id="@+id/video_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_below="@+id/video_item"
         android:layout_above="@+id/video_bottom">
 
     </ListView>
@@ -39,20 +45,20 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:drawableLeft="@mipmap/ic_launcher"/>
+            android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
         <TextView
             android:text="98"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:drawableLeft="@mipmap/ic_launcher"/>
+            android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
         <TextView
             android:text="分享"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:drawableLeft="@mipmap/ic_launcher"/>
+            android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
     </LinearLayout>
 </RelativeLayout>
