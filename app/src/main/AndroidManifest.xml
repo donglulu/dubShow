@@ -3,6 +3,7 @@
     package="open.com.nicesound">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -18,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.video.LiveActivity" />
-        <activity android:name=".activity.video.VideoActivity"></activity>
+        <activity android:name=".activity.video.VideoActivity">
+
+        </activity>
         <activity android:name=".fragment.circle.CircleDetailActivity"/>
     </application>
 

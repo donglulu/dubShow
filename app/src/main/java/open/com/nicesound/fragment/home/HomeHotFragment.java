@@ -48,7 +48,6 @@ public class HomeHotFragment extends BaseFragment {
             @Override
             public void finish(int resultcode, List<HomeHotBean.DataBean.FilmBean> list) {
                 filmBeen = list;
-
                 gv_hot.setAdapter(new hotAdapter());
             }
         });

@@ -25,8 +25,8 @@
         android:id="@+id/video_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/video_bottom"
-        android:layout_marginTop="?attr/actionBarSize">
+        android:layout_below="@+id/video_item"
+        android:layout_above="@+id/video_bottom">
 
     </ListView>
 
@@ -41,24 +41,33 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableLeft="@mipmap/ic_launcher"
             android:gravity="center_horizontal"
+            android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
             android:text="曝光"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableLeft="@mipmap/ic_launcher"
             android:gravity="center_horizontal"
+            android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
             android:text="98"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableLeft="@mipmap/ic_launcher"
             android:gravity="center_horizontal"
+            android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
             android:text="分享"/>
     </LinearLayout>
+
+    <include
+        layout="@layout/video"
+        android:id="@+id/video_item"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/video_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

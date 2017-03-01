@@ -36,6 +36,7 @@ public class HomeActivityFragment extends BaseFragment {
    /* class thread extends Thread {
         @Override
         public void run() {
+
             try {
                 String content = get("http://m.mmjpg.com");
 //                int start = s.indexOf("所有");
