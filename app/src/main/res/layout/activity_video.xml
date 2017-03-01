@@ -20,27 +20,13 @@
             android:textColor="#000"
             android:textSize="20sp"/>
     </android.support.v7.widget.Toolbar>
-<<<<<<< HEAD
-    <include
-        layout="@layout/video"
-        android:id="@+id/video_item"
-        android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:layout_below="@+id/video_toolbar" />
-=======
 
->>>>>>> origin/master
     <ListView
         android:id="@+id/video_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-<<<<<<< HEAD
         android:layout_below="@+id/video_item"
         android:layout_above="@+id/video_bottom">
-=======
-        android:layout_above="@+id/video_bottom"
-        android:layout_marginTop="?attr/actionBarSize">
->>>>>>> origin/master
 
     </ListView>
 
@@ -55,36 +41,33 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableLeft="@mipmap/ic_launcher"
             android:gravity="center_horizontal"
-<<<<<<< HEAD
             android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
-=======
             android:text="曝光"/>
 
->>>>>>> origin/master
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableLeft="@mipmap/ic_launcher"
             android:gravity="center_horizontal"
-<<<<<<< HEAD
             android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
-=======
             android:text="98"/>
 
->>>>>>> origin/master
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableLeft="@mipmap/ic_launcher"
             android:gravity="center_horizontal"
-<<<<<<< HEAD
             android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
-=======
             android:text="分享"/>
->>>>>>> origin/master
     </LinearLayout>
+
+    <include
+        layout="@layout/video"
+        android:id="@+id/video_item"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/video_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
