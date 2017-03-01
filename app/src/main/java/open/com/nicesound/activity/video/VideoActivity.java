@@ -1,5 +1,7 @@
 package open.com.nicesound.activity.video;
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -36,9 +38,12 @@ public class VideoActivity extends AppCompatActivity implements SuperPlayer.OnNe
 
         title = (TextView) findViewById(R.id.toolbar_title);
         title.setText("视频详情");
+
+        Intent intent = getIntent();
+        String url = intent.getStringExtra("url");
         //测试视频播放是否成功
-        String url1 = "http://9890.vod.myqcloud.com/9890_4e292f9a3dd011e6b4078980237cc3d3.f20.mp4";
-        initPlayer(url1);
+//        String url = "http://9890.vod.myqcloud.com/9890_4e292f9a3dd011e6b4078980237cc3d3.f20.mp4";
+        initPlayer(url);
 
     }
 
@@ -49,6 +54,11 @@ public class VideoActivity extends AppCompatActivity implements SuperPlayer.OnNe
                 .play(url);//开始播放视频
         viewSuperPlayer.setScaleType(SuperPlayer.SCALETYPE_FITXY);
         viewSuperPlayer.setPlayerWH(0, viewSuperPlayer.getMeasuredHeight());//设置竖屏的时候屏幕的高度，如果不设置会切换后按照16:9的高度重置
+    }
+    public static void actionStart(Context context,String url){
+        Intent intent = new Intent(context,VideoActivity.class);
+        intent.putExtra("url",url);
+        context.startActivity(intent);
     }
 
     @Override
