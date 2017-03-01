@@ -42,8 +42,10 @@ import master.flame.danmaku.danmaku.parser.android.AndroidFileSource;
 import master.flame.danmaku.danmaku.util.DanmakuUtils;
 
 /**
- * Created by VincenT on 2017/2/28 10:36.
+ * Author: VincenT
+ * Date: 2017/3/1 11:20
  * Contact:qq 328551489
+ * Purpose:此类用于解析Bili弹幕
  */
 public class BiliDanmukuParser extends BaseDanmakuParser {
 
