@@ -20,8 +20,9 @@
         android:background="#fff"
         jp:TabAnimate="Scale"
         jp:TabMiddleIcon="@drawable/add5"
-        jp:TabMiddleBottomDis="25dp"
-        jp:TabSelectColor="#55000000"
+        jp:TabMiddleBottomDis="20dp"
+        jp:TabNormalColor="#55000000"
+        jp:TabSelectColor="#FF6F02"
         jp:TabTextSize="12sp" />
 
 
