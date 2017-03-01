@@ -1,2 +1,2 @@
-include ':app', ':superplayerlibrary', ':ijkplayerlibrary'
+include ':app', ':superplayerlibrary'
 include ':app'

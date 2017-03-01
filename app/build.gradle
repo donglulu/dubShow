@@ -59,6 +59,7 @@ dependencies {
     compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.7.7.1'
     compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.7.7.1'
     compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.7.7.1'
+    compile project(':superplayerlibrary')
     //bilibili弹幕依赖
     compile 'com.github.ctiao:DanmakuFlameMaster:0.6.4'
     compile 'com.github.ctiao:ndkbitmap-armv7a:0.6.4'
