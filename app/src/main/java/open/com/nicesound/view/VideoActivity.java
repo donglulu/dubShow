@@ -32,10 +32,8 @@ public class VideoActivity extends AppCompatActivity implements SuperPlayer.OnNe
         viewSuperPlayer = (SuperPlayer) findViewById(R.id.view_super_player);
 
         //测试视频播放是否成功
-//        String url1 = "http://9890.vod.myqcloud.com/9890_4e292f9a3dd011e6b4078980237cc3d3.f20.mp4";
-//        initPlayer(url1);
-
-
+        String url1 = "http://9890.vod.myqcloud.com/9890_4e292f9a3dd011e6b4078980237cc3d3.f20.mp4";
+        initPlayer(url1);
 
     }
 

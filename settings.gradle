@@ -1,1 +1,3 @@
 include ':app', ':superplayerlibrary', ':ijkplayerlibrary'
+include ':app'
+include ':ViewPagerIndicatorlibrary'

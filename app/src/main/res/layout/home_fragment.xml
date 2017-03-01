@@ -7,6 +7,42 @@
     android:orientation="vertical">
 
 
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageButton
+                android:background="@null"
+                android:src="@drawable/home_icon_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ib_box"/>
+
+
+            <com.viewpagerindicator.TabPageIndicator
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/indicator_title"/>
+            <ImageButton
+                android:background="@null"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/abc_ic_search_api_mtrl_alpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ib_search"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
 
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_home"
