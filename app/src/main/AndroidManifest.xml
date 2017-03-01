@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.video.LiveActivity" />
-        <activity android:name=".activity.video.VideoActivity"></activity>
+        <activity android:name=".activity.video.VideoActivity">
+
+        </activity>
         <activity android:name=".fragment.circle.CircleDetailActivity"/>
     </application>
 

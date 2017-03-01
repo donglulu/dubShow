@@ -11,25 +11,31 @@ import android.widget.Toast;
 
 import com.superplayer.library.SuperPlayer;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import open.com.nicesound.R;
 
 /**  视频详情页面 */
 public class VideoActivity extends AppCompatActivity implements SuperPlayer.OnNetChangeListener {
-    private Toolbar toolbar;
-    private SuperPlayer viewSuperPlayer;
+
+    @BindView(R.id.video_toolbar)
+    public Toolbar toolbar;
+    @BindView(R.id.view_super_player)
+    public SuperPlayer viewSuperPlayer;
+    @BindView(R.id.toolbar_title)
+    public TextView title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
-        toolbar = (Toolbar) findViewById(R.id.video_toolbar);
+        ButterKnife.bind(this);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        TextView Ttitle = (TextView) findViewById(R.id.toolbar_title);
-        Ttitle.setText("视频详情");
-        viewSuperPlayer = (SuperPlayer) findViewById(R.id.view_super_player);
 
+        title = (TextView) findViewById(R.id.toolbar_title);
+        title.setText("视频详情");
         //测试视频播放是否成功
         String url1 = "http://9890.vod.myqcloud.com/9890_4e292f9a3dd011e6b4078980237cc3d3.f20.mp4";
         initPlayer(url1);
