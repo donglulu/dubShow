@@ -11,18 +11,28 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+<<<<<<< HEAD
         <activity android:name=".view.MainActivity">
 
         </activity>
         <activity android:name=".view.LiveActivity" />
         <activity android:name=".view.VideoActivity">
+=======
+        <activity android:name=".activity.main.MainActivity">
+>>>>>>> origin/master
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".view.circle.CircleDetailActivity"/>
+=======
+        <activity android:name=".activity.video.LiveActivity" />
+        <activity android:name=".activity.video.VideoActivity"></activity>
+        <activity android:name=".fragment.circle.CircleDetailActivity"/>
+>>>>>>> origin/master
     </application>
 
 </manifest>

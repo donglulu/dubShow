@@ -1,64 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_video"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="open.com.nicesound.view.VideoActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activity.video.VideoActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/video_toolbar"
         android:layout_width="match_parent"
-        android:background="@color/colorAccent"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent">
+
         <TextView
             android:id="@+id/toolbar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textColor="#000"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
     </android.support.v7.widget.Toolbar>
+<<<<<<< HEAD
     <include
         layout="@layout/video"
         android:id="@+id/video_item"
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:layout_below="@+id/video_toolbar" />
+=======
+
+>>>>>>> origin/master
     <ListView
         android:id="@+id/video_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+<<<<<<< HEAD
         android:layout_below="@+id/video_item"
         android:layout_above="@+id/video_bottom">
+=======
+        android:layout_above="@+id/video_bottom"
+        android:layout_marginTop="?attr/actionBarSize">
+>>>>>>> origin/master
 
     </ListView>
+
     <LinearLayout
         android:id="@+id/video_bottom"
-        android:weightSum="3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:weightSum="3">
+
         <TextView
-            android:text="曝光"
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
-        <TextView
-            android:text="98"
             android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:gravity="center_horizontal"
+<<<<<<< HEAD
+            android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
+=======
+            android:text="曝光"/>
+
+>>>>>>> origin/master
+        <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
-        <TextView
-            android:text="分享"
             android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:gravity="center_horizontal"
+<<<<<<< HEAD
+            android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
+=======
+            android:text="98"/>
+
+>>>>>>> origin/master
+        <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_launcher"
             android:gravity="center_horizontal"
+<<<<<<< HEAD
             android:drawableLeft="@mipmap/zhibo_icon_huifang_renshu"/>
+=======
+            android:text="分享"/>
+>>>>>>> origin/master
     </LinearLayout>
 </RelativeLayout>
