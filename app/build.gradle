@@ -47,4 +47,5 @@ dependencies {
     compile 'com.github.ctiao:ndkbitmap-armv7a:0.6.4'
     compile 'com.github.ctiao:ndkbitmap-armv5:0.6.4'
     compile 'com.github.ctiao:ndkbitmap-x86:0.6.4'
+    compile files('build/intermediates/exploded-aar/com.github.supercwn.SuperPlayer/ijkplayerlibrary/047b45f7e5/jars/classes.jar')
 }
