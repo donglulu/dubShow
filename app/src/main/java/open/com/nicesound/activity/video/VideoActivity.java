@@ -3,11 +3,9 @@ package open.com.nicesound.activity.video;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,11 +19,11 @@ import open.com.nicesound.R;
 public class VideoActivity extends AppCompatActivity implements SuperPlayer.OnNetChangeListener {
 
     @BindView(R.id.video_toolbar)
-    public Toolbar toolbar;
+    Toolbar toolbar;
     @BindView(R.id.view_super_player)
-    public SuperPlayer viewSuperPlayer;
+    SuperPlayer viewSuperPlayer;
     @BindView(R.id.toolbar_title)
-    public TextView title;
+    TextView title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
